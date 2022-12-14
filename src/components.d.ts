@@ -5,13 +5,10 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil-community/router";
-import { Product } from "./components/app-product-listing/product.model";
 export namespace Components {
     interface AppCart {
     }
     interface AppProduct {
-        "match": MatchResults;
     }
     interface AppProductListing {
     }
@@ -54,8 +51,6 @@ declare namespace LocalJSX {
     interface AppCart {
     }
     interface AppProduct {
-        "match"?: MatchResults;
-        "onProductAddedToCart"?: (event: CustomEvent<Product>) => void;
     }
     interface AppProductListing {
     }
